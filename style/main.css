@@ -1,4 +1,69 @@
-.main{
-    background-color: orange;
+/* Clearingin out some styling native to most browsers */
+body, html{
+    margin: 0;
     width: 100%;
+}
+
+/* The following section styles everything in the top half of the page */
+/* Setting the background color and making the angled slash */
+.introduction {
+    background-color: gray;
+    padding-bottom: 8vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+/* Getting the title and the Logo on the same line */
+.introduction>a, .introduction>h1{
+    float: left;
+    width: auto;
+}
+/* Spacing the logo from the edge */
+.introduction>a{
+    margin-left: 10vw;
+}
+/* Getting the paragraphs off the walls and into the middle */
+.introduction>p{
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* This section styles the bottom half of the page */
+/* Getting the two information sections on the same line */
+.signups-information, .season-information{
+    width: 50%;
+    float: left;
+}
+/* Section titles centered */
+.signups-information>h2, .season-information>h2{
+    text-align: center;
+}
+/* Getting the paragraphs off the walls and into the middle */
+.signups-information>p, .season-information>p{
+    width: 80%;
+    margin: 0 auto;
+}
+/*  */
+.date-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 10px 0;
+}
+/* This is setting up the style for the big blocks for the dates */
+.date-container>div{
+    font-size: 3.5em;
+    background-color: navy;
+    color: white;
+    width: 1em;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* getting the written date string below the big blocks */
+.date-section>span {
+    text-align: center;
 }
