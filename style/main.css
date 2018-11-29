@@ -103,7 +103,7 @@ html {
 /* This is setting up the style for the big blocks for the dates */
 .date-container>div{
     font-size: 3.5em;
-    background-color: navy;
+    background-color: #CF460D;
     color: white;
     width: 1em;
     padding: 10px;
