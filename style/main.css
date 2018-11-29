@@ -4,8 +4,31 @@ body, html{
     width: 100%;
     background-color: #2F0E46;
 }
+html {
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+}
 
 /* The following section styles everything in the top half of the page */
+/* making the Coming Soon section be on an angle and transparent */
+.coming-soon{
+    -ms-transform: skew(40deg, -40deg);
+    -webkit-transform: skew(40deg, -40deg); 
+    transform: skew(40deg, -40deg); 
+    background-color: #1C032D;
+    z-index: 10;
+    font-size: 2em;
+    padding: 10px 50px;
+    color: white;
+
+    position: fixed;
+    top: 4vh;
+    left: -2vw;
+
+    opacity: .8;
+}
 /* Setting the background color and making the angled slash */
 .introduction {
     background-color: #F2692E;
@@ -14,7 +37,7 @@ body, html{
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 /* Getting the title and the Logo on the same line */
-.introduction>a, .introduction>h1{
+.introduction>a, .title{
     float: left;
     width: auto;
 }
@@ -26,18 +49,31 @@ body, html{
 .introduction>a{
     display: block;
     width: 100px;
-    height:100px;
 }
 .introduction>a>img{
     width: 100%;
     height: auto;
 }
+/* Making the NGS much bigger and on the bottom of the line */
+.title{
+    margin: 0px;
+    font-size: 24px;
+}
+.first-letter{
+    font-size: 5em;
+}
 /* Getting the paragraphs off the walls and into the middle */
 .introduction>p{
     clear: both;
     width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
+
+
+
+
+
+
 
 /* This section styles the bottom half of the page */
 /* Getting the two information sections on the same line */
@@ -49,6 +85,7 @@ body, html{
 /* Section titles centered */
 .signups-information>h2, .season-information>h2{
     text-align: center;
+    font-size: 2em;
 }
 /* Getting the paragraphs off the walls and into the middle */
 .signups-information>p, .season-information>p{
@@ -79,10 +116,14 @@ body, html{
     text-align: center;
 }
 
+
+
+
+
+
 /* This section is for styling the footer */
 /* This section holds the social media 'icons' */
 footer{
-    background-color: white;
     clear: both;
     display: flex;
     justify-content: center;
@@ -90,16 +131,16 @@ footer{
     flex-wrap: nowrap;
 
     /* Only use this if there isn't enough content to force it to the botom of the page */
-    width: 100%;
+    /* width: 100%;
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
 }
 /* making it so the social media icons match in size */
 footer>a{
     display: block;
-    width: 75px;
-    height: 75px;
+    width: 250px;
+    margin: 10px;
 }
 footer>a>img{
     width: 100%;
