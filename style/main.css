@@ -2,17 +2,17 @@
 body, html{
     margin: 0;
     width: 100%;
+    background-color: #2F0E46;
 }
 
 /* The following section styles everything in the top half of the page */
 /* Setting the background color and making the angled slash */
 .introduction {
-    background-color: gray;
+    background-color: #F2692E;
     padding-bottom: 8vh;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
-
 /* Getting the title and the Logo on the same line */
 .introduction>a, .introduction>h1{
     float: left;
@@ -20,7 +20,17 @@ body, html{
 }
 /* Spacing the logo from the edge */
 .introduction>a{
-    margin-left: 10vw;
+    margin-left: 10%;
+}
+/* making it so the logo fits the page */
+.introduction>a{
+    display: block;
+    width: 100px;
+    height:100px;
+}
+.introduction>a>img{
+    width: 100%;
+    height: auto;
 }
 /* Getting the paragraphs off the walls and into the middle */
 .introduction>p{
@@ -34,6 +44,7 @@ body, html{
 .signups-information, .season-information{
     width: 50%;
     float: left;
+    color: white;
 }
 /* Section titles centered */
 .signups-information>h2, .season-information>h2{
@@ -44,7 +55,7 @@ body, html{
     width: 80%;
     margin: 0 auto;
 }
-/*  */
+/* This section holds the date 'icons' */
 .date-container{
     display: flex;
     justify-content: center;
@@ -64,6 +75,33 @@ body, html{
     text-align: center;
 }
 /* getting the written date string below the big blocks */
-.date-section>span {
+.written-date {
     text-align: center;
+}
+
+/* This section is for styling the footer */
+/* This section holds the social media 'icons' */
+footer{
+    background-color: white;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    /* Only use this if there isn't enough content to force it to the botom of the page */
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+/* making it so the social media icons match in size */
+footer>a{
+    display: block;
+    width: 75px;
+    height: 75px;
+}
+footer>a>img{
+    width: 100%;
+    height: auto;
 }
