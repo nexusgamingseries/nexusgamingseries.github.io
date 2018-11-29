@@ -33,8 +33,8 @@ html {
 .introduction {
     background-color: #F2692E;
     padding-bottom: 8vh;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
 }
 /* Getting the title and the Logo on the same line */
 .introduction>a, .title{
@@ -44,6 +44,8 @@ html {
 /* Spacing the logo from the edge */
 .introduction>a{
     margin-left: 10%;
+    margin-top: 1.5%;
+    margin-right: 2.5%;
 }
 /* making it so the logo fits the page */
 .introduction>a{
@@ -81,6 +83,7 @@ html {
     width: 50%;
     float: left;
     color: white;
+    margin-bottom: 20px;
 }
 /* Section titles centered */
 .signups-information>h2, .season-information>h2{
