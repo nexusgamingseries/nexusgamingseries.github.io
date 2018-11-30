@@ -1,14 +1,14 @@
 /* Clearingin out some styling native to most browsers */
 body, html{
-    margin: 0;
-    width: 100%;
-    background-color: #2F0E46;
+  margin: 0;
+  width: 100%;
+  background-color: #2F0E46;
 }
 html {
-    overflow: scroll;
+  overflow: scroll;
 }
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
+  width: 0px;  /* remove scrollbar space */
 }
 
 
@@ -18,61 +18,61 @@ html {
 /* The following section styles everything in the top half of the page */
 /* making the Coming Soon section be on an angle and transparent */
 .coming-soon{
-    -ms-transform: skew(40deg, -40deg);
-    -webkit-transform: skew(40deg, -40deg); 
-    transform: skew(40deg, -40deg); 
-    background-color: #1C032D;
-    z-index: 10;
-    font-size: 2em;
-    padding: 10px 50px;
-    color: white;
+  -ms-transform: skew(40deg, -40deg);
+  -webkit-transform: skew(40deg, -40deg); 
+  transform: skew(40deg, -40deg); 
+  background-color: #1C032D;
+  z-index: 10;
+  font-size: 2em;
+  padding: 10px 50px;
+  color: white;
 
-    position: fixed;
-    top: 3.5vh;
-    left: -2.5vw;
+  position: fixed;
+  top: 3.5vh;
+  left: -2.5vw;
 
-    opacity: .8;
+  opacity: .8;
 }
 /* Setting the background color and making the angled slash */
 .introduction {
-    background-color: #F2692E;
-    padding-bottom: 8vh;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+  background-color: #F2692E;
+  padding-bottom: 8vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
 }
 /* Getting the title and the Logo on the same line */
 .introduction>a, .title{
-    float: left;
-    width: auto;
+  float: left;
+  width: auto;
 }
 /* Spacing the logo from the edge */
 .introduction>a{
-    margin-left: 10%;
-    margin-top: 1.5%;
-    margin-right: 2.5%;
+  margin-left: 10%;
+  margin-top: 1.5%;
+  margin-right: 2.5%;
 }
 /* making it so the logo fits the page */
 .introduction>a{
-    display: block;
-    width: 100px;
+  display: block;
+  width: 100px;
 }
 .introduction>a>img{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 /* Making the NGS much bigger and on the bottom of the line */
 .title{
-    margin: 0px;
-    font-size: 24px;
+  margin: 0px;
+  font-size: 24px;
 }
 .first-letter{
-    font-size: 5em;
+  font-size: 5em;
 }
 /* Getting the paragraphs off the walls and into the middle */
 .introduction>p{
-    clear: both;
-    width: 80%;
-    margin: 10px auto;
+  clear: both;
+  width: 80%;
+  margin: 10px auto;
 }
 
 
@@ -84,43 +84,43 @@ html {
 /* This section styles the bottom half of the page */
 /* Getting the two information sections on the same line */
 .signups-information, .season-information{
-    width: 50%;
-    float: left;
-    color: white;
-    margin-bottom: 20px;
+  width: 50%;
+  float: left;
+  color: white;
+  margin-bottom: 20px;
 }
 /* Section titles centered */
 .signups-information>h2, .season-information>h2{
-    text-align: center;
-    font-size: 2em;
+  text-align: center;
+  font-size: 2em;
 }
 /* Getting the paragraphs off the walls and into the middle */
 .signups-information>p, .season-information>p{
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 /* This section holds the date 'icons' */
 .date-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 10px 0;
 }
 /* This is setting up the style for the big blocks for the dates */
 .date-container>div{
-    font-size: 3.5em;
-    background-color: #CF460D;
-    color: white;
-    width: 1em;
-    padding: 10px;
-    margin: 0 5px;
-    border-radius: 10px;
-    text-align: center;
+  font-size: 3.5em;
+  background-color: #CF460D;
+  color: white;
+  width: 1em;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 10px;
+  text-align: center;
 }
 /* getting the written date string below the big blocks */
 .written-date {
-    text-align: center;
+  text-align: center;
 }
 
 
@@ -131,25 +131,25 @@ html {
 /* This section is for styling the footer */
 /* This section holds the social media 'icons' */
 footer{
-    clear: both;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
-    /* Only use this if there isn't enough content to force it to the botom of the page */
-    /* width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0; */
+  /* Only use this if there isn't enough content to force it to the botom of the page */
+  /* width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0; */
 }
 /* making it so the social media icons match in size */
 footer>a{
-    display: block;
-    width: 250px;
-    margin: 10px;
+  display: block;
+  width: 250px;
+  margin: 10px;
 }
 footer>a>img{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
