@@ -1,4 +1,4 @@
-/* Clearingin out some styling native to most browsers */
+/* Clearing out some styling native to most browsers */
 body, html {
   background-color: #2F0E46;
   margin: 0;
@@ -90,6 +90,7 @@ html {
   margin-bottom: 20px;
   width: 50%;
 }
+
 /* Section titles centered */
 .signups-information > h2, .season-information > h2 {
   font-size: 2em;
@@ -101,6 +102,7 @@ html {
   margin: 0 auto;
   width: 80%;
 }
+
 /* This section holds the date 'icons' */
 .date-container {
   display: flex;
@@ -109,6 +111,7 @@ html {
   justify-content: center;
   margin: 10px 0;
 }
+
 /* This is setting up the style for the big blocks for the dates */
 .date-container > div {
   background-color: #CF460D;
@@ -120,6 +123,7 @@ html {
   text-align: center;
   width: 1em;
 }
+
 /* getting the written date string below the big blocks */
 .written-date {
   text-align: center;
@@ -127,7 +131,6 @@ html {
 
 /* This section is for styling the footer */
 /* This section holds the social media 'icons' */
-
 footer {
   clear: both;
   display: flex;
@@ -148,6 +151,7 @@ footer > a {
   margin: 10px;
   width: 250px;
 }
+
 footer > a > img {
   height: auto;
   width: 100%;
