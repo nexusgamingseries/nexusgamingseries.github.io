@@ -1,0 +1,158 @@
+/* Clearing out some styling native to most browsers */
+body, html {
+  background-color: #2F0E46;
+  margin: 0;
+  width: 100%;
+}
+
+html {
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+}
+
+/* The following section styles everything in the top half of the page */
+/* making the Coming Soon section be on an angle and transparent */
+.coming-soon {
+  background-color: #1C032D;
+  color: white;
+  font-size: 2em;
+  opacity: .8;
+  padding: 10px 50px;
+  z-index: 10;
+
+  position: fixed;
+  left: -2.5vw;
+  top: 3.5vh;
+
+  -ms-transform: skew(40deg, -40deg);
+  -webkit-transform: skew(40deg, -40deg);
+  transform: skew(40deg, -40deg);
+}
+
+/* Setting the background color and making the angled slash */
+.introduction {
+  background-color: #F2692E;
+  padding-bottom: 8vh;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+}
+
+/* Getting the title and the Logo on the same line */
+.introduction > a, .title {
+  float: left;
+  width: auto;
+}
+
+/* Spacing the logo from the edge */
+.introduction > a{
+  margin-left: 10%;
+  margin-right: 2.5%;
+  margin-top: 1.5%;
+}
+
+/* making it so the logo fits the page */
+.introduction > a {
+  display: block;
+  width: 100px;
+}
+
+.introduction > a > img {
+  height: auto;
+  width: 100%;
+}
+
+/* Making the NGS much bigger and on the bottom of the line */
+.title {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.first-letter {
+  font-size: 5em;
+}
+
+/* Getting the paragraphs off the walls and into the middle */
+.introduction > p {
+  clear: both;
+  margin: 10px auto;
+  width: 80%;
+}
+
+/* This section styles the bottom half of the page */
+/* Getting the two information sections on the same line */
+.signups-information, .season-information {
+  color: white;
+  float: left;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+/* Section titles centered */
+.signups-information > h2, .season-information > h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+/* Getting the paragraphs off the walls and into the middle */
+.signups-information > p, .season-information > p {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* This section holds the date 'icons' */
+.date-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+/* This is setting up the style for the big blocks for the dates */
+.date-container > div {
+  background-color: #CF460D;
+  border-radius: 10px;
+  color: white;
+  font-size: 3.5em;
+  margin: 0 5px;
+  padding: 10px;
+  text-align: center;
+  width: 1em;
+}
+
+/* getting the written date string below the big blocks */
+.written-date {
+  text-align: center;
+}
+
+/* This section is for styling the footer */
+/* This section holds the social media 'icons' */
+footer {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  /* Only use this if there isn't enough content to force it to the botom of the page */
+  /* width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0; */
+}
+
+/* making it so the social media icons match in size */
+footer > a {
+  display: block;
+  margin: 10px;
+  width: 250px;
+}
+
+footer > a > img {
+  height: auto;
+  width: 100%;
+}
