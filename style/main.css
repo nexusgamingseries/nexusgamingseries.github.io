@@ -25,8 +25,7 @@ html {
 
 .top-background {
   background-color: #F2692E;
-  padding-top: 40px;
-  padding-bottom: 80px;
+  padding: 50px 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
   -webkit-clip-path: url("#clip-shape");
