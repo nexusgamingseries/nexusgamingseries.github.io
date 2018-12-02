@@ -44,7 +44,7 @@ html {
 }
 
 #clip-shadow {
-  background: linear-gradient(135deg, black, 75%, grey);
+  background: linear-gradient(179deg, black, 75%, grey);
   content: "";
   height: 60px;
   position: absolute;
