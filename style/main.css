@@ -1,6 +1,10 @@
 /* Clearing out some styling native to most browsers */
-body, html {
-  background-color: #2F0E46;
+
+body,
+html {
+  /* background-repeat: no-repeat; */
+  /* background-image: linear-gradient(355deg, #3E1957 50%, #EE592A 50%); */
+  background-color: #482262;
   margin: 0;
   width: 100%;
 }
@@ -9,12 +13,73 @@ html {
   overflow: scroll;
 }
 
+/* remove scrollbar space */
 ::-webkit-scrollbar {
-  width: 0px;  /* remove scrollbar space */
+  width: 0px;
+}
+
+@font-face {
+  font-family: "ig-font";
+  src: url('../static/Infinium\ Guardian.ttf');
+}
+
+.top-background {
+  background-color: #F2692E;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+  -webkit-clip-path: url("#clip-shape");
+  /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
+  clip-path: url("#clip-shape");
+}
+
+.top-text {
+  font-family: 'ig-font';
+  font-size: 1.5em;
+  color: #1C032D;
+}
+
+.top-text-default-font {
+  color: #1C032D;
+}
+
+.cs-underline {
+  text-decoration: underline;
+}
+
+.bot-text {
+  color: #f5f5f5;
+  font-family: 'ig-font';
+}
+
+.bot-text-default-font {
+  color: #f5f5f5;
+}
+
+.hr-special {
+  border: none;
+  height: 2px;
+  background-color: #1C032D;
+  color: #1C032D;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  box-shadow: 4px 2px 4px black;
+}
+
+@media only screen and (min-width: 768px) {
+  .hr-special {
+    width: 545px;
+  }
+}
+
+.social-background {
+  background-color: black;
 }
 
 /* The following section styles everything in the top half of the page */
-/* making the Coming Soon section be on an angle and transparent */
+
+/* Making the Coming Soon section be on an angle and transparent */
 .coming-soon {
   background-color: #1C032D;
   color: white;
@@ -22,11 +87,9 @@ html {
   opacity: .8;
   padding: 10px 50px;
   z-index: 10;
-
   position: fixed;
   left: -2.5vw;
   top: 3.5vh;
-
   -ms-transform: skew(40deg, -40deg);
   -webkit-transform: skew(40deg, -40deg);
   transform: skew(40deg, -40deg);
@@ -36,69 +99,63 @@ html {
 .introduction {
   background-color: #F2692E;
   padding-bottom: 8vh;
-
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
 }
 
-/* Getting the title and the Logo on the same line */
-.introduction > a, .title {
-  float: left;
-  width: auto;
-}
-
 /* Spacing the logo from the edge */
-.introduction > a{
+.introduction>a {
   margin-left: 10%;
   margin-right: 2.5%;
   margin-top: 1.5%;
 }
 
 /* making it so the logo fits the page */
-.introduction > a {
+.introduction>a {
   display: block;
   width: 100px;
 }
 
-.introduction > a > img {
+.introduction>a>img {
   height: auto;
   width: 100%;
 }
 
 /* Making the NGS much bigger and on the bottom of the line */
-.title {
-  font-size: 24px;
-  margin: 0px;
-}
-
 .first-letter {
   font-size: 5em;
 }
 
+
 /* Getting the paragraphs off the walls and into the middle */
-.introduction > p {
+.introduction>p {
   clear: both;
   margin: 10px auto;
   width: 80%;
 }
 
 /* This section styles the bottom half of the page */
+
 /* Getting the two information sections on the same line */
-.signups-information, .season-information {
+.signups-information,
+.season-information {
   color: white;
   float: left;
   margin-bottom: 20px;
   width: 50%;
 }
 
+
 /* Section titles centered */
-.signups-information > h2, .season-information > h2 {
+.signups-information>h2,
+.season-information>h2 {
   font-size: 2em;
   text-align: center;
 }
 
 /* Getting the paragraphs off the walls and into the middle */
-.signups-information > p, .season-information > p {
+.signups-information>p,
+.season-information>p {
   margin: 0 auto;
   width: 80%;
 }
@@ -113,15 +170,23 @@ html {
 }
 
 /* This is setting up the style for the big blocks for the dates */
-.date-container > div {
-  background-color: #CF460D;
-  border-radius: 10px;
-  color: white;
+.date-grad {
+  background-image: linear-gradient(#f5f5f5, #cccccc);
+  color: #1C032D;
   font-size: 3.5em;
   margin: 0 5px;
   padding: 10px;
   text-align: center;
   width: 1em;
+}
+
+.date-slash {
+  background-image: linear-gradient(#f5f5f5, #cccccc);
+  color: #1C032D;
+  font-size: 3.5em;
+  margin: 0 5px;
+  padding: 2px;
+  text-align: center;
 }
 
 /* getting the written date string below the big blocks */
@@ -130,6 +195,7 @@ html {
 }
 
 /* This section is for styling the footer */
+
 /* This section holds the social media 'icons' */
 footer {
   clear: both;
@@ -137,22 +203,16 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-
-  /* Only use this if there isn't enough content to force it to the botom of the page */
-  /* width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0; */
 }
 
 /* making it so the social media icons match in size */
-footer > a {
+footer>a {
   display: block;
   margin: 10px;
   width: 250px;
 }
 
-footer > a > img {
+footer>a>img {
   height: auto;
   width: 100%;
 }
