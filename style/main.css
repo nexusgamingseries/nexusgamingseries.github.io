@@ -13,10 +13,10 @@ html {
   overflow: scroll;
 }
 
-/* remove scrollbar space */
+/* remove scrollbar space
 ::-webkit-scrollbar {
   width: 0px;
-}
+} */
 
 @font-face {
   font-family: "ig-font";
@@ -36,8 +36,13 @@ html {
 
 .top-text {
   font-family: 'ig-font';
-  font-size: 1.5em;
+  font-size: 3em;
   color: #1C032D;
+}
+
+/* Making the NGS much bigger and on the bottom of the line */
+.first-letter {
+  font-size: 2em;
 }
 
 .top-text-default-font {
@@ -51,10 +56,13 @@ html {
 .bot-text {
   color: #f5f5f5;
   font-family: 'ig-font';
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .bot-text-default-font {
   color: #f5f5f5;
+  text-align: left;
 }
 
 .hr-special {
@@ -121,12 +129,6 @@ html {
   width: 100%;
 }
 
-/* Making the NGS much bigger and on the bottom of the line */
-.first-letter {
-  font-size: 5em;
-}
-
-
 /* Getting the paragraphs off the walls and into the middle */
 .introduction>p {
   clear: both;
@@ -166,11 +168,15 @@ html {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  margin: 10px 0;
+  margin: 25px 0;
 }
 
 /* This is setting up the style for the big blocks for the dates */
-.date-grad {
+.digit-wrap {
+  padding: 25px 0;
+}
+
+.digit-grad {
   background-image: linear-gradient(#f5f5f5, #cccccc);
   color: #1C032D;
   font-size: 3.5em;
@@ -184,8 +190,8 @@ html {
   background-image: linear-gradient(#f5f5f5, #cccccc);
   color: #1C032D;
   font-size: 3.5em;
-  margin: 0 5px;
-  padding: 2px;
+  margin: 0 7.5px;
+  padding: 2.5px;
   text-align: center;
 }
 
@@ -203,6 +209,7 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  margin: 25px 0;
 }
 
 /* making it so the social media icons match in size */
