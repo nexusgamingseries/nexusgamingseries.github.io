@@ -209,7 +209,7 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  margin-top: 25px;
+  margin: 25px 0;
 }
 
 /* making it so the social media icons match in size */
