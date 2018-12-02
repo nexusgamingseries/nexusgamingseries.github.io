@@ -13,7 +13,7 @@ html {
   overflow: scroll;
 }
 
-  /* remove scrollbar space */
+/* remove scrollbar space */
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -104,19 +104,19 @@ html {
 }
 
 /* Spacing the logo from the edge */
-.introduction > a {
+.introduction>a {
   margin-left: 10%;
   margin-right: 2.5%;
   margin-top: 1.5%;
 }
 
 /* making it so the logo fits the page */
-.introduction > a {
+.introduction>a {
   display: block;
   width: 100px;
 }
 
-.introduction > a > img {
+.introduction>a>img {
   height: auto;
   width: 100%;
 }
@@ -128,7 +128,7 @@ html {
 
 
 /* Getting the paragraphs off the walls and into the middle */
-.introduction > p {
+.introduction>p {
   clear: both;
   margin: 10px auto;
   width: 80%;
@@ -147,15 +147,15 @@ html {
 
 
 /* Section titles centered */
-.signups-information > h2,
-.season-information > h2 {
+.signups-information>h2,
+.season-information>h2 {
   font-size: 2em;
   text-align: center;
 }
 
 /* Getting the paragraphs off the walls and into the middle */
-.signups-information > p,
-.season-information > p {
+.signups-information>p,
+.season-information>p {
   margin: 0 auto;
   width: 80%;
 }
@@ -206,13 +206,13 @@ footer {
 }
 
 /* making it so the social media icons match in size */
-footer > a {
+footer>a {
   display: block;
   margin: 10px;
   width: 250px;
 }
 
-footer > a >img {
+footer>a>img {
   height: auto;
   width: 100%;
 }
