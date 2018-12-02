@@ -25,7 +25,7 @@ html {
 
 .top-background {
   background-color: #F2692E;
-  padding: 50px 0;
+  padding: 60px 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
   -webkit-clip-path: url("#clip-shape");
@@ -46,6 +46,7 @@ html {
 
 .top-text-default-font {
   color: #1C032D;
+  font-size: 1.1em;
 }
 
 .cs-underline {
@@ -56,6 +57,13 @@ html {
   color: #f5f5f5;
   font-family: 'ig-font';
   font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.bot-date-text {
+  color: #f5f5f5;
+  font-family: 'ig-font';
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
