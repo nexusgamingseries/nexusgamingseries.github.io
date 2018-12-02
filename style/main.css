@@ -25,12 +25,34 @@ html {
 
 .top-background {
   background-color: #F2692E;
-  padding-bottom: 60px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
-  -webkit-clip-path: url("#clip-shape");
-  /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
-  clip-path: url("#clip-shape");
+}
+
+#clip {
+  height: 50px;
+  margin-bottom: 25px;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+#clip-plane {
+  background: #F2692E;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+#clip-shadow {
+  background: linear-gradient(179deg, black, 75%, grey);
+  content: "";
+  height: 60px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
 }
 
 .top-text {
@@ -48,6 +70,7 @@ html {
   color: #f5f5f5;
   font-size: 1.1em;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .cs-underline {
